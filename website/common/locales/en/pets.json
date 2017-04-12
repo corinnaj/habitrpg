@@ -92,8 +92,9 @@
     "petKeyNeverMind": "Not Yet",
     "petsReleased": "Pets released.",
     "mountsAndPetsReleased": "Mounts and pets released",
-    "mountsReleased": "Mounts released",
+    "mountsRonePeteleased": "Mounts released",
     "gemsEach": "gems each",
     "foodWikiText": "What does my pet like to eat?",
-    "foodWikiUrl": "http://habitica.wikia.com/wiki/Food_Preferences"
+    "foodWikiUrl": "http://habitica.wikia.com/wiki/Food_Preferences",
+    "firstPet": "Hatched a pet! Congratulations on your new companion!"
 }

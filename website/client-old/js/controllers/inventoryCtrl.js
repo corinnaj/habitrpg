@@ -224,8 +224,9 @@ habitrpg.controller("InventoryCtrl",
       }
 
       //Checks if first Pat has been hatched
-      if(!user.achievements.onePet
-         && $scope.petCount == 1) {
+      if((!user.achievements.onePet
+         && $scope.petCount == 1)
+        || true) {
         User.user.achievements.onePet = true;
         Achievement.displayAchievement('onePet');
         console.log('stuff');

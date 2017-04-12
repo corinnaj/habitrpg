@@ -72,6 +72,17 @@ script(id='modals/achievements/ultimateGear.html', type='text/ng-template')
       button.btn.btn-primary(ng-click='$close()')=env.t('huzzah')
     +achievementFooter
 
+// First Pet 
+script(id='modals/achievements/firstPet.html', type='text/ng-template')
+  .modal-content(style='min-width:28em')
+    .modal-body.text-center
+      h3(style='margin-bottom:0')=env.t('modalAchievement')
+      +achievementAvatar('rat',0)
+      p=env.t('firstPet')
+      br
+      button.btn.btn-primary(ng-click='$close()')=env.t('huzzah')
+    +achievementFooter
+
 // Beast Master
 script(id='modals/achievements/beastMaster.html', type='text/ng-template')
   .modal-content(style='min-width:28em')
