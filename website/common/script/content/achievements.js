@@ -161,6 +161,15 @@ let holidayAchievs = {
 };
 Object.assign(achievementsData, holidayAchievs);
 
+let petAchievs = {
+  onePet: {
+    icon: 'achievement-hatched-1',
+    textKey: 'onePetText',
+    titleKey: 'onePetKey',
+  },
+};
+Object.assign(achievementsData, petAchievs);
+
 let ultimateGearAchievs = ['healer', 'rogue', 'warrior', 'mage'].reduce((achievs, type) => {
   achievs[`${type}UltimateGear`] = {
     icon: `achievement-ultimate-${type}`,

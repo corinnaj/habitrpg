@@ -222,6 +222,14 @@ habitrpg.controller("InventoryCtrl",
         User.user.achievements.triadBingo = true;
         Achievement.displayAchievement('triadBingo');
       }
+
+      //Checks if first Pat has been hatched
+      if(!user.achievements.onePet
+         && $scope.petCount == 1) {
+        User.user.achievements.onePet = true;
+        Achievement.displayAchievement('onePet');
+        console.log('stuff');
+      }
     }
 
     $scope.choosePet = function(egg, potion){

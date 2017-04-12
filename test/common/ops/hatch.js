@@ -142,6 +142,16 @@ describe('shared.ops.hatch', () => {
         expect(user.items.eggs).to.eql({Wolf: 0});
         expect(user.items.hatchingPotions).to.eql({Base: 0});
       });
+
+      it('rewards the achievment for having hatched one pet', () => {
+        user.items.pets = {};
+        user.items.eggs = {Wolf: 1};
+        user.items.hatchingPotions = {Base: 1};
+        let [data, message] = hatch(user, {params: {egg: 'Wolf', hatchingPotion: 'Base'}});
+        expect(message).to.eql(i18n.t('messageHatched'));
+        expect(data).to.eql(user.items);
+        expect(user.achievements.onePet).to.equal(1);
+      });
     });
   });
 });
