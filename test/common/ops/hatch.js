@@ -143,14 +143,25 @@ describe('shared.ops.hatch', () => {
         expect(user.items.hatchingPotions).to.eql({Base: 0});
       });
 
-      it('rewards the achievment for having hatched one pet', () => {
+      it('rewards the achievment for having hatched the first pet', () => {
         user.items.pets = {};
         user.items.eggs = {Wolf: 1};
         user.items.hatchingPotions = {Base: 1};
         let [data, message] = hatch(user, {params: {egg: 'Wolf', hatchingPotion: 'Base'}});
         expect(message).to.eql(i18n.t('messageHatched'));
         expect(data).to.eql(user.items);
-        expect(user.achievements.onePet).to.equal(1);
+        expect(user.achievements.firstPet).to.equal(true);
+      });
+
+      it('rewards the achievment for having hatched the first pet only once', () => {
+        user.items.pets = {};
+        user.items.eggs = {Wolf: 1};
+        user.items.hatchingPotions = {Base: 1};
+        user.achievements.firstPet = true;
+        let [data, message] = hatch(user, {params: {egg: 'Wolf', hatchingPotion: 'Base'}});
+        expect(message).to.eql(i18n.t('messageHatched'));
+        expect(data).to.eql(user.items);
+        expect(user.achievements.firstPet).to.equal(true);
       });
     });
   });

@@ -224,13 +224,15 @@ habitrpg.controller("InventoryCtrl",
       }
 
       //Checks if first Pat has been hatched
-      if((!user.achievements.onePet
-         && $scope.petCount == 1)
-        || true) {
-        User.user.achievements.onePet = true;
-        Achievement.displayAchievement('onePet');
-        console.log('stuff');
-      }
+      var petAchievements = {1:"firstPet", 4:"fourPets", 5:"fivePets", 10:"tenPets", 25:"twentyfivePets", 50:"fiftyPets"};
+      Object.keys(petAchievements).forEach(function(number){
+        if($scope.petCount == number
+            && !user.achievements[petAchievements[number]]) {
+          User.user.achievements[petAchievements[number]] = true;
+          Achievement.displayAchievement(petAchievements[number]);
+          console.log(User.user.achievements);
+        }
+      })
     }
 
     $scope.choosePet = function(egg, potion){

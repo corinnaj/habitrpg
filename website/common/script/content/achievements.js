@@ -162,10 +162,10 @@ let holidayAchievs = {
 Object.assign(achievementsData, holidayAchievs);
 
 let petAchievs = {
-  onePet: {
+  firstPet: {
     icon: 'achievement-hatched-1',
-    textKey: 'onePetText',
-    titleKey: 'onePetKey',
+    textKey: 'firstPetText',
+    titleKey: 'firstPetKey',
   },
 };
 Object.assign(achievementsData, petAchievs);
