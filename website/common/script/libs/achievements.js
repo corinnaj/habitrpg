@@ -179,6 +179,10 @@ function _getBasicAchievements (user, language) {
 
   _addSimple(result, user, {path: 'partyUp', language});
   _addSimple(result, user, {path: 'partyOn', language});
+  _addSimple(result, user, {path: 'firstPet', language});
+  _addSimple(result, user, {path: 'tenPets', language});
+  _addSimple(result, user, {path: 'twentyFivePets', language});
+  _addSimple(result, user, {path: 'fiftyPets', language});
 
   _addSimpleWithMasterCount(result, user, {path: 'beastMaster', language});
   _addSimpleWithMasterCount(result, user, {path: 'mountMaster', language});

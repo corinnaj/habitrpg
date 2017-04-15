@@ -77,8 +77,19 @@ script(id='modals/achievements/firstPet.html', type='text/ng-template')
   .modal-content(style='min-width:28em')
     .modal-body.text-center
       h3(style='margin-bottom:0')=env.t('modalAchievement')
-      +achievementAvatar('rat',0)
+      +achievementAvatar('hatched-1-',0)
       p=env.t('firstPet')
+      br
+      button.btn.btn-primary(ng-click='$close()')=env.t('huzzah')
+    +achievementFooter
+
+// First Ten Pets
+script(id='modals/achievements/tenPets.html', type='text/ng-template')
+  .modal-content(style='min-width:28em')
+    .modal-body.text-center
+      h3(style='margin-bottom:0')=env.t('modalAchievement')
+      +achievementAvatar('hatched-10-',0)
+      p=env.t('tenPets')
       br
       button.btn.btn-primary(ng-click='$close()')=env.t('huzzah')
     +achievementFooter

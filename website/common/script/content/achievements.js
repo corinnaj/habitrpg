@@ -167,6 +167,21 @@ let petAchievs = {
     textKey: 'firstPetText',
     titleKey: 'firstPetKey',
   },
+  tenPets: {
+    icon: 'achievement-hatched-10',
+    textKey: 'tenPetsText',
+    titleKey: 'tenPetsKey',
+  },
+  twentyFivePets: {
+    icon: 'achievement-hatched-25',
+    textKey: 'twentyFivePetsText',
+    titleKey: 'twentyFivePetsKey',
+  },
+  fiftyPets: {
+    icon: 'achievement-hatched-50',
+    textKey: 'fiftyPetsText',
+    titleKey: 'fiftyPetsKey',
+  },
 };
 Object.assign(achievementsData, petAchievs);
 

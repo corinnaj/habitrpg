@@ -96,5 +96,16 @@
     "gemsEach": "gems each",
     "foodWikiText": "What does my pet like to eat?",
     "foodWikiUrl": "http://habitica.wikia.com/wiki/Food_Preferences",
-    "firstPet": "Hatched a pet! Congratulations on your new companion!"
+    "firstPet": "Hatched a pet! Congratulations on your new companion!",
+    "firstPetKey": "Hatched 1 Pet",
+    "firstPetText": "Hatched a pet! Congratulations on your new companion!",
+    "tenPets": "Hatched 10 pets! Congratulations on all the tasks you're getting done to get those drops!",
+    "tenPetsKey": "Hatched 10 Pets",
+    "tenPetsText": "Hatched 10 pets! Congratulations on all the tasks you're getting done to get those drops!",
+    "twentyFivePets": "Hatched 25 pets! Congratulations on all the tasks you're getting done to get those drops!",
+    "twentyFivePetsKey": "Hatched 25 Pets",
+    "twentyFivePetsText": "Hatched 25 pets! Congratulations on all the tasks you're getting done to get those drops!",
+    "fiftyPets": "Hatched 50 pets! Congratulations on all the tasks you're getting done to get those drops!",
+    "fiftyPetsKey": "Hatched 50 Pets",
+    "fiftyPetsText": "Hatched 50 pets! Congratulations on all the tasks you're getting done to get those drops!"
 }

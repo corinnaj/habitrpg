@@ -111,6 +111,14 @@ describe('achievements', () => {
         .that.is.a('number');
     });
 
+    it('number of pets hatched achievements exist with no counts', () => {
+      let firstPet = basicAchievs.firstPet;
+      // TODO other numbers
+
+      expect(firstPet).to.exist;
+      expect(firstPet.optionalCount).to.be.undefined;
+    });
+
     it('ultimate gear achievements exist with no counts', () => {
       let gearTypes = ['healer', 'rogue', 'warrior', 'mage'];
       gearTypes.forEach((gear) => {

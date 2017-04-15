@@ -111,6 +111,10 @@ let schema = new Schema({
     birthday: Number,
     partyUp: Boolean,
     partyOn: Boolean,
+    firstPet: Boolean,
+    tenPets: Boolean,
+    twentyFivePets: Boolean,
+    fiftyPets: Boolean,
   },
 
   backer: {
